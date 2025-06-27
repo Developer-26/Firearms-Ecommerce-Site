@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "View Specials";
+}
+<link rel="stylesheet" href="~/css/ViewSpecials.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/logo-styles.css" asp-append-version="true" />
+<div>
+    <div class="Heading-Specials">Edit Iron Sight Specials</div>
+
+    <div class="shopping-gallery">
+        @foreach (var product in Model)
+        {
+            <div class="gallery-item"
+                 data-name="@product.ProductName"
+                 data-description="@product.ProductDescription"
+                 data-price="@product.Price.ToString("C")"
+                 data-image="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                 onclick="openPopup(this)">
+
+                <!-- Special Item inside Gallery Item -->
+                <div class="special-item">
+                    <img src="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                         alt="@product.ProductName"
+                         class="product-image" />
+                    <div class="product-info">
+                        <p class="item-name">@product.ProductName</p>
+                        <p class="item-price">@product.Price.ToString("C")</p>
+                    </div>
+                </div>
+
+                <a asp-controller="ProductSpecials" asp-action="Edit" asp-route-id="@product.SpecialID" class="btn btn-warning">Edit</a>
+                <!-- Delete Button -->
+                <form asp-action="Delete" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="@product.SpecialID" />
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this product?');">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        }
+    </div>
+</div>
+
+

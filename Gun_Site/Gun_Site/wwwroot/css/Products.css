@@ -1,0 +1,216 @@
+/* Styling for category filter links */
+.category-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .category-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+        .category-links a:hover {
+            color: #0056b3;
+        }
+
+/*User headings form product*/
+ /*Headings section per category for products*/
+.category-section1 {
+    margin-top: 0px;
+}
+    /* Default style (for smaller screens) */
+    .category-section1 h2 {
+        text-align: left;
+        margin-left: 220px; /* Adjust for smaller screens */
+        font-size: 1.8em;
+        font-weight: bold;
+        position: relative;
+        top: 55px;
+    }
+
+    /*Admin headings form products*/
+/*Headings section per category for products*/
+.category-section {
+    margin-top: 0px;
+}
+    /* Default style (for smaller screens) */
+    .category-section h2 {
+        text-align: left;
+        margin-left: 220px; /* Adjust for smaller screens */
+        font-size: 1.8em;
+        font-weight: bold;
+        position: relative;
+        top: 20px;
+    }
+
+
+/* View More button styling */
+.view-more {
+    margin-left: 1000px; /* Pushes the button to the right */
+}
+
+/* Buy Now button */
+.view-more-btn {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding for size */
+    margin-top: 10px; /* Add spacing above the button */
+    font-size: 1em; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #000000; /* Add a black border (stroke) */
+    border-radius: 10px; /* Add larger rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Show hand pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+}
+
+    .view-more-btn:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }
+
+
+/* Ensure the gallery slider looks like the Specials section */
+.shopping-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+
+.gallery-item {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .gallery-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 200px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/* Popup container */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content */
+.popup-content {
+    display: flex;
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Left side: Image */
+.popup-left {
+    width: 50%; /* Half the screen width */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important; /* Force white background */
+    border-radius: 5px; /* Optional: add border radius to image box */
+    overflow: hidden;
+}
+
+    .popup-left img {
+        width: 100%; /* Full width of the left section */
+        height: auto; /* Let the image maintain its natural height */
+        object-fit: contain; /* Ensures the image fits inside the container without being cut off */
+        border-radius: 5px;
+    }
+
+/* Right side: Product details */
+.popup-right {
+    width: 50%; /* Half the screen width */
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Buy Now button */
+.buy-now-btn {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding for size */
+    margin-top: 10px; /* Add spacing above the button */
+    font-size: 1em; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #000000; /* Add a black border (stroke) */
+    border-radius: 10px; /* Add larger rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Show hand pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+}
+
+    .buy-now-btn:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }

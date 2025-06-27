@@ -1,0 +1,140 @@
+﻿<link rel="stylesheet" href="~/css/Products.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+<script src="~/JavaScript/slider.js"></script>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+@model IEnumerable<Gun_Site.Models.Admin_Added_Products>
+
+<link rel="stylesheet" href="~/css/Products.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div class="Heading-Specials1">Browse @ViewData["Category"] Firearms</div>
+
+<div class="shopping-gallery">
+    @foreach (var product in Model)
+    {
+        <div class="gallery-item"
+             data-name="@product.ProductName"
+             data-description="@product.ProductDescription"
+             data-price="@product.Price.ToString("C")"
+             data-image="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+             onclick="openPopup(this)">
+
+            <!-- Special Item inside Gallery Item -->
+            <div class="special-item">
+                <img src="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                     alt="@product.ProductName"
+                     class="product-image" />
+                <div class="product-info">
+                    <p class="item-name">@product.ProductName</p>
+                    <p class="item-price">@product.Price.ToString("C")</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<div id="productPopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div class="popup-left">
+            <img id="popupImage" src="" alt="Product Image">
+        </div>
+        <div class="popup-right">
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+            <p><strong>Price:</strong> <span id="popupPrice"></span></p>
+            <a id="buyNowButton" class="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    /* Shopping Gallery */
+    .shopping-gallery {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to next row */
+        justify-content: space-between; /* Distribute space between items */
+        margin: 20px auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /* Gallery Items */
+    .gallery-item {
+        flex: 0 0 31.33%; /* Three items per row (with space between) */
+        box-sizing: border-box; /* Includes padding in the width */
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ddd; /* Light border around the item */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+        background-color: #fff; /* White background for the box */
+        margin: 10px; /* Space between boxes */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+        height: 450px; /* Fixed height to ensure uniform size for all items */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced correctly within item */
+    }
+
+        .gallery-item:hover {
+            transform: translateY(-10px); /* Lift the item slightly on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 5px;
+            object-fit: contain; /* Ensure the image keeps its aspect ratio */
+            max-height: 200px; /* Limit image height */
+            margin-bottom: 10px;
+        }
+
+    .item-name, .item-price {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 5px 0;
+        word-wrap: break-word; /* Ensures long text wraps properly */
+    }
+
+    .item-price {
+        color: #555;
+        font-size: 1em;
+    }
+
+    /* Heading for Specials Section */
+    .Heading-Specials1 {
+        padding: 20px 0; /* Adds vertical spacing */
+        text-align: center; /* Centers the text */
+        font-size: 2rem; /* Increases the font size for better visibility */
+        font-weight: bold; /* Makes the text bold */
+        color: #333; /* Sets a dark gray color for the text */
+        background-color: #f8f9fa; /* Optional: Light background for better emphasis */
+        margin: 20px auto; /* Adds margin to separate from surrounding content */
+        border-radius: 5px; /* Optional: Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
+    }
+
+    /* Ensure the page fills at least the full viewport height */
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Make the main content area take up all available space */
+    .container {
+        flex: 1;
+    }
+
+    /* Ensure the footer stays at the bottom */
+    .footer {
+        margin-top: auto;
+    }
+</style>

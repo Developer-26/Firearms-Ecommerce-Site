@@ -1,0 +1,72 @@
+﻿@page
+@model LogoutModel
+
+@{
+    ViewData["Title"] = "Log out";
+}
+
+<style>
+    /* Main Background */
+    body {
+        background-image: url('/images/Background1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #254c32;
+    }
+
+    /* Form Container */
+    .logout-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    /* Titles */
+    .logout-title {
+        color: #000000;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .btn-logout, .btn-logout:hover, .btn-logout:focus {
+        display: inline-block; /* Make it behave like a button */
+        padding: 10px 20px; /* Add padding for size */
+        margin-top: 10px; /* Add spacing above the button */
+        font-size: 1em; /* Set font size */
+        font-weight: bold; /* Make the text bold */
+        color: #000000; /* Button text color */
+        background-color: #ffffff; /* Button background color */
+        border: 2px solid #000000; /* Add a black border (stroke) */
+        border-radius: 10px; /* Add larger rounded corners */
+        text-decoration: none; /* Remove underline for links */
+        cursor: pointer; /* Show hand pointer on hover */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+    }
+
+        .btn-logout:hover {
+            background-color: #5e5e5c; /* Change background color on hover */
+            color: #ffffff; /* Keep the text white or set your desired hover text color */
+            transform: translateY(-2px); /* Slightly lift the button on hover */
+        }
+</style>
+
+<div class="row">
+    <div class="col-md-4 logout-container">
+        <h1 class="logout-title">@ViewData["Title"]</h1>
+        <p>Are you sure you want to log out?</p>
+        <form method="post">
+            <button type="submit" class="btn btn-logout">Log out</button>
+        </form>
+        <p class="mt-3">
+            <a asp-page="/Index" class="text-dark">Cancel and return to Home</a>
+        </p>
+    </div>
+</div>

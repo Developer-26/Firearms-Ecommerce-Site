@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Gun_Site.Models.Admin_Added_Products>
+<link rel="stylesheet" href="~/css/Products.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+<script src="~/JavaScript/slider.js"></script>
+
+
+<div class="Heading-Specials1">Browse Our Firearms By Category</div>
+<!-- Category Filter Links -->
+<div class="category-links">
+    <a asp-controller="Products" asp-action="Index">All</a> |
+    <a asp-controller="Products" asp-action="ByCategory" asp-route-category="Pistols">Pistols</a> |
+    <a asp-controller="Products" asp-action="ByCategory" asp-route-category="Semi Automatic Rifles">Semi Automatic Rifles</a> |
+    <a asp-controller="Products" asp-action="ByCategory" asp-route-category="CentreFire Rifles">Centrefire Rifles</a> |
+    <a asp-controller="Products" asp-action="ByCategory" asp-route-category="Shotguns">Shotguns</a>
+</div>
+
+
+<!-- Group products by category -->
+@foreach (var categoryGroup in Model.GroupBy(p => p.Category))
+{
+    <div class="category-section1">
+        <div class="category-header">
+            <h2>@categoryGroup.Key</h2> <!-- Category Name -->
+            <div class="view-more">
+                <a asp-controller="Products" asp-action="GridView" asp-route-category="@categoryGroup.Key" class="view-more-btn">View More</a>
+            </div>
+        </div>
+
+        <div class="shopping-gallery">
+            <button class="prev-btn" onclick="slideLeft('@categoryGroup.Key')">❮</button>
+            <div class="gallery-wrapper">
+                <div class="gallery-container" id="gallery-@categoryGroup.Key">
+                    @foreach (var product in categoryGroup)
+                    {
+                        <div class="gallery-item"
+                             data-name="@product.ProductName"
+                             data-description="@product.ProductDescription"
+                             data-price="@product.Price.ToString("C")"
+                             data-image="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))">
+                            <img src="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                                 alt="@product.ProductName"
+                                 class="product-image" />
+                            <div class="product-info">
+                                <p class="item-name">@product.ProductName</p>
+                                <p class="item-price">@product.Price.ToString("C")</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <button class="next-btn" onclick="slideRight('@categoryGroup.Key')">❯</button>
+        </div>
+    </div>
+}
+
+
+
+
+<div id="productPopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div class="popup-left">
+            <img id="popupImage" src="" alt="Product Image">
+        </div>
+        <div class="popup-right">
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+            <p><strong>Price:</strong> <span id="popupPrice"></span></p>
+            <a id="buyNowButton" class="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer bg-light">
+    <div class="footer-part bg-dark py-4 border-bottom">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h5 class="text-white mb-0 mr-3">Stay Connected</h5>
+                        <input type="text" class="form-control mx-2" placeholder="Enter your email" style="width: 300px;">
+                        <button type="button" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-part bg-light py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/Circle_Logo.png" alt="Circle_Logo" class="Footer-logo" />
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <img src="/images/instagram.png" alt="Instagram" class="icon" />
+                        <img src="/images/facebook.png" alt="Facebook" class="icon" />
+                        <img src="/images/twitter.png" alt="Twitter" class="icon" />
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Get In Touch</h5>
+                    <p>info@Thaslyn_Govender.co.za</p>
+                    <p>+27 (0) 11-802-0735</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="mt-3">© 2025 Iron Sight Firearms. All rights reserved.</p>
+                    <p>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Logout" class="text-dark">Logout</a>
+                        }
+                        else
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login" class="text-dark">Login</a>
+                        }
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

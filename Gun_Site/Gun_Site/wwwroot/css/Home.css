@@ -1,0 +1,418 @@
+/*/Original*/
+
+/* Ensure full-width without horizontal overflow */
+.full-width-section {
+    height: 50vh; /* Set height */
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+    /* Ensure the image fully covers the section */
+    .full-width-section img {
+        width: 100%; /* Make sure it covers the full width */
+        height: 100%; /* Make sure it covers the full height */
+        object-fit: cover; /* Ensure the image fully fills the container */
+        display: block; /* Remove any inline spacing issues */
+    }
+
+
+
+/* Banner Section */
+.full-width-section {
+    height: 50vh; /* Set height for the banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allow positioning of child elements */
+    color: white;
+    overflow: hidden;
+}
+
+/* Text content on the banner */
+.banner-content {
+    text-align: center;
+    max-width: 800px; /* Limit width of the text */
+    background: rgba(0, 0, 0, 0.); /* Add a semi-transparent black background */
+    padding: 20px; /* Add some padding for better readability */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+    /* Headings and Paragraph Styling */
+    .banner-content h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .banner-content h2 {
+        font-size: 2.5rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .banner-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+/* Read More Button Styling */
+.read-more-btn {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding for size */
+    margin-top: 10px; /* Add spacing above the button */
+    font-size: 1em; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #000000; /* Add a black border (stroke) */
+    border-radius: 10px; /* Add larger rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Show hand pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+}
+
+    .read-more-btn:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*Gun Sales Section*/
+
+.prev-btn, .next-btn {
+    position: fixed; /* Make buttons fixed in the viewport */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Ensure they appear above all other elements */
+}
+
+.prev-btn {
+    left: 10px; /* Adjust based on how far you want it from the viewport edge */
+}
+
+.next-btn {
+    right: 10px; /* Adjust based on how far you want it from the viewport edge */
+}
+
+
+/* Ensure no overlap with gallery items */
+.shopping-gallery {
+    position: relative;
+    padding: 0 50px; /* Adds padding to make space for buttons */
+}
+
+/* Shopping Gallery */
+.shopping-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+.gallery-item {
+    flex: 0 0 33.3333%; /* Exactly 3 items visible */
+    box-sizing: border-box; /* Include padding in the width */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border around the item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    background-color: #fff; /* White background for the box */
+    margin: 10px; /* Space between boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+    .gallery-item:hover {
+        transform: translateY(-10px); /* Lift the item slightly on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    }
+
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 200px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.item-price {
+    color: #555;
+    font-size: 1em;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Heading for Specials Section */
+.Heading-Specials {
+    padding: 20px 0; /* Adds vertical spacing */
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Increases the font size for better visibility */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Sets a dark gray color for the text */
+    background-color: #f8f9fa; /* Optional: Light background for better emphasis */
+    margin: 20px auto; /* Adds margin to separate from surrounding content */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
+}
+
+button:disabled {
+    opacity: 0.5; /* Makes disabled buttons look faded */
+    cursor: not-allowed; /* Shows not-allowed cursor when hovering over disabled buttons */
+}
+
+/* Heading for Specials Section */
+.Heading-Specials1 {
+    padding: 20px 0; /* Adds vertical spacing */
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Increases the font size for better visibility */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Sets a dark gray color for the text */
+    background-color: #f8f9fa; /* Optional: Light background for better emphasis */
+    margin: 20px auto; /* Adds margin to separate from surrounding content */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*Services Boxes*/
+.box-container {
+    display: flex; /* Align items in a row */
+    justify-content: space-around; /* Add space between boxes */
+    margin: 20px auto; /* Add spacing around the container */
+    max-width: 1200px; /* Limit the container width */
+}
+
+.box {
+    flex: 1; /* Make boxes equal in width */
+    margin: 10px; /* Add spacing between boxes */
+    padding: 20px; /* Add padding inside the boxes */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: #f8f9fa; /* Light background for contrast */
+    text-align: center; /* Center the text inside the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+}
+
+    .box:hover {
+        transform: translateY(-10px); /* Lift the box slightly on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    }
+
+    .box h3 {
+        font-size: 1.5em; /* Increase title size */
+        margin-bottom: 10px; /* Add spacing below the title */
+    }
+
+    .box p {
+        font-size: 1em; /* Set paragraph font size */
+        color: #555; /* Use a subtle text color */
+        text-align: center; /* Center-align the text */
+    }
+
+    .box img.box-image {
+        max-width: 50px; /* Ensures the image doesn't exceed the box width */
+        border-radius: 5px; /* Optional: Add rounded corners to the image */
+        margin-bottom: 10px; /* Add spacing below the image */
+        object-fit: cover; /* Ensure image fits well within the space */
+    }
+
+
+/*Buttons input services boxes*/
+.shop-button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding for size */
+    margin-top: 10px; /* Add spacing above the button */
+    font-size: 1em; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #000000; /* Add a black border (stroke) */
+    border-radius: 10px; /* Add larger rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Show hand pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+}
+
+    .shop-button:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+/* Ensure the page fills at least the full viewport height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Popup container */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+    display: flex;
+    width: 60%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Left side: Image */
+.popup-left {
+    width: 50%; /* Half the screen width */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    border-radius: 5px;
+    height: 400px; /* Set a fixed height for uniformity */
+    overflow: hidden;
+}
+
+    .popup-left img {
+        width: 100%; /* Full width of the left section */
+        height: 100%; /* Make image take full height of container */
+        object-fit: contain; /* Ensures the entire image fits within the container without clipping */
+    }
+
+
+/* Right side: Product details */
+.popup-right {
+    flex: 1;
+    padding: 20px;
+}
+
+    /* Rest of the styling remains unchanged */
+
+
+    .popup-right h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .popup-right p {
+        font-size: 16px;
+        color: #333;
+    }
+
+.popup-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjusted from top */
+    right: 15px; /* Adjusted from right */
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001; /* Ensures button stays on top */
+}
+
+    .close-btn:hover {
+        color: #d9534f;
+    }
+
+
+/* Buy Now button */
+.buy-now-btn {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding for size */
+    margin-top: 10px; /* Add spacing above the button */
+    font-size: 1em; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000000; /* Button text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #000000; /* Add a black border (stroke) */
+    border-radius: 10px; /* Add larger rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Show hand pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth effects */
+}
+
+    .buy-now-btn:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }

@@ -1,0 +1,225 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/Home.css" asp-append-version="true" />
+<script src="~/JavaScript/slider.js"></script>
+
+<!-- Full-width banner -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 full-width-section" style="background: url('/images/Spartan.jpg') no-repeat center; background-size: cover;">
+            <div class="banner-content text-center text-white">
+                <h1>Welcome To</h1>
+                <h2>Iron Sight Firearms</h2>
+                <p>
+                    Iron Sight Firearms is a trusted destination for high-quality firearms, ammunition, and accessories. The website offers a sleek,
+                    black-and-white modern design, showcasing a curated selection of firearms, special deals, and professional training services.
+                    Whether you're a seasoned shooter or a beginner, Iron Sight Firearms provides expert guidance and top-tier products to meet your needs.
+                </p>
+                <a href="@Url.Action("Index", "About")" class="btn read-more-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="Heading-Specials">Check Out Our Specials</div>
+
+    <div class="shopping-gallery">
+        <button class="prev-btn" onclick="slideLeft()">❮</button>
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                @foreach (var product in Model)
+                {
+                    <div class="gallery-item"
+                         data-name="@product.ProductName"
+                         data-description="@product.ProductDescription"
+                         data-price="@product.Price.ToString("C")"
+                         data-image="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                         onclick="openPopup(this)">
+
+                        <!-- Special Item inside Gallery Item -->
+                        <div class="special-item"
+                             data-name="@product.ProductName"
+                             data-description="@product.ProductDescription"
+                             data-price="@product.Price.ToString("C")"
+                             data-image="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))">
+                            <img src="@Url.Content("~/images/products/" + System.IO.Path.GetFileName(product.ImagePath))"
+                                 alt="@product.ProductName"
+                                 class="product-image" />
+                            <div class="product-info">
+                                <p class="item-name">@product.ProductName</p>
+                                <p class="item-price">@product.Price.ToString("C")</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <button class="next-btn" onclick="slideRight()">❯</button>
+    </div>
+</div>
+
+<!-- Product Popup -->
+<div id="productPopup" class="popup">
+    <div class="popup-content">
+        <!-- Close button inside the popup -->
+        <span class="close-btn" onclick="closePopup()">×</span>
+
+        <!-- Left side: Image with 3D effect -->
+        <div class="popup-left">
+            <img id="popupImage" src="" alt="Product Image" />
+        </div>
+
+        <!-- Right side: Product details -->
+        <div class="popup-right">
+            <h2 id="popupTitle"></h2>
+            <p id="popupDescription"></p>
+            <p class="popup-price" id="popupPrice"></p>
+            <a id="buyNowButton" class="buy-now-btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+<div>
+
+
+
+
+    <div class="Heading-Specials1">IRON SIGHT FIREARMS SERVICES</div>
+    <div class="box-container">
+        <div class="box">
+            <img src="/images/bullets.png" alt="Box 1 Image" class="box-image">
+            <h3>Ammo Retail</h3>
+            <p>
+                Find a wide selection of high-quality ammunition for all your shooting needs. Whether you're stocking up for the range,
+                hunting, or personal defense, we offer reliable and competitively priced ammo to keep you prepared.
+            </p>
+            <a href="#" class="shop-button">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="/images/firearm.png" alt="Box 1 Image" class="box-image">
+            <h3>Firearms Training</h3>
+            <p>
+                Enhance your skills with professional firearms training. Whether you're a beginner or an experienced shooter,
+                our expert instructors provide hands-on training to ensure safety, accuracy, and confidence in handling firearms.
+            </p>
+            <a href="#" class="shop-button">Shop Now</a>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer bg-light">
+    <div class="footer-part bg-dark py-4 border-bottom">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h5 class="text-white mb-0 mr-3">Stay Connected</h5>
+                        <input type="text" class="form-control mx-2" placeholder="Enter your email" style="width: 300px;">
+                        <button type="button" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-part bg-light py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/Circle_Logo.png" alt="Circle_Logo" class="Footer-logo" />
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <img src="/images/instagram.png" alt="Instagram" class="icon" />
+                        <img src="/images/facebook.png" alt="Facebook" class="icon" />
+                        <img src="/images/twitter.png" alt="Twitter" class="icon" />
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Get In Touch</h5>
+                    <p>info@Thaslyn_Govender.co.za</p>
+                    <p>+27 (0) 11-802-0735</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="mt-3">© 2025 Iron Sight Firearms. All rights reserved.</p>
+                    <p>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Logout" class="text-dark">Logout</a>
+                        }
+                        else
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login" class="text-dark">Login</a>
+                        }
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    let scrollPosition = 0;
+    const container = document.querySelector('.gallery-container');
+    const items = container.children;
+    const itemMargin = 20;
+    const itemWidth = items[0].offsetWidth + itemMargin;
+    const visibleWidth = container.offsetWidth;
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+
+    function getMaxScroll() {
+        const totalWidth = items.length * itemWidth;
+        return -(totalWidth - visibleWidth);
+    }
+
+    function updateButtonState() {
+        if (scrollPosition >= 0) {
+            prevBtn.disabled = true;
+            prevBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
+            prevBtn.style.cursor = 'not-allowed';
+        } else {
+            prevBtn.disabled = false;
+            prevBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            prevBtn.style.cursor = 'pointer';
+        }
+
+        const maxScroll = getMaxScroll();
+        if (scrollPosition <= maxScroll) {
+            nextBtn.disabled = true;
+            nextBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
+            nextBtn.style.cursor = 'not-allowed';
+        } else {
+            nextBtn.disabled = false;
+            nextBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            nextBtn.style.cursor = 'pointer';
+        }
+    }
+
+       function slideLeft() {
+        scrollPosition = Math.min(scrollPosition + visibleWidth, 0); // Slide by visible width
+        container.style.transform = `translateX(${scrollPosition}px)`;
+        updateButtonState();
+    }
+
+    function slideRight() {
+        const maxScroll = getMaxScroll();
+        scrollPosition = Math.max(scrollPosition - visibleWidth, maxScroll); // Slide by visible width
+        container.style.transform = `translateX(${scrollPosition}px)`;
+        updateButtonState();
+    }
+
+
+    updateButtonState();
+</script>

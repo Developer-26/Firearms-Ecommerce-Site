@@ -1,0 +1,70 @@
+﻿@model Gun_Site.Models.ProductDto
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<div class="content form-page-wrapper">
+    <div class="glass-card w-75">
+        <h1 class="text-center">Edit Product</h1>
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="@ViewData["ProductId"]" />
+
+
+            <div class="form-group mb-3">
+                <label asp-for="ProductName" class="control-label">Product Name</label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ProductDescription" class="control-label">Product Description</label>
+                <textarea asp-for="ProductDescription" class="form-control"></textarea>
+                <span asp-validation-for="ProductDescription" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Category" class="control-label">Product Category</label>
+                <select asp-for="Category" class="form-control">
+                    <option value="Pistols">Pistols</option>
+                    <option value="Semi Automatic Rifles">Semi Automatic Rifles</option>
+                    <option value="CentreFire Rifles">CentreFire Rifles</option>
+                    <option value="Shotguns">Shotguns</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Price" class="control-label">Product Price</label>
+                <input asp-for="Price" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ImageFilePath" class="control-label">Current Image</label>
+
+                <div>
+                    @if (ViewData["ImagePath"] != null)
+                    {
+                        <img src="@ViewData["ImagePath"]" alt="Current Image" class="img-thumbnail mb-2" width="200" />
+                    }
+                </div>
+
+
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ImageFilePath" class="control-label">Change Product Image?</label>
+                <input asp-for="ImageFilePath" class="form-control" type="file" />
+                <span asp-validation-for="ImageFilePath" class="text-danger"></span>
+            </div>
+            
+
+            <div class="form-group text-center">
+                <input type="submit" value="Update Product" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+
+            
+        </form>
+    </div>
+</div>

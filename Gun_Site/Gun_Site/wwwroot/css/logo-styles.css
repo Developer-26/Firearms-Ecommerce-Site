@@ -1,0 +1,255 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    color: #ff6600; /* Optional: Highlight color for active links */
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+/*Nav Bar Logo Styling*/
+.navbar-logo {
+    height: 100px; /* Adjust based on your preference */
+    width: 150px; /* Maintain aspect ratio */
+    padding: 0;}
+
+/* Adding a grey background to the navbar */
+.navbar {
+    background-color: #F6F5F5; /* Grey background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    position: relative;
+    width: 100%;
+}/*#F8F7F7*/
+
+/* Remove bullet points from the navbar list */
+.navbar-nav {
+    list-style-type: none; /* Removes the bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Align items horizontally */
+}
+
+    .navbar-nav .nav-item {
+        margin-right: 20px; /* Space between links */
+    }
+
+
+    /* Styling navbar container to center its content */
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Vertically center the items */
+    }
+
+/* Styling navbar links */
+.nav-link {
+    font-size: 20px; /* Adjust font size */
+    color: #333; /* Dark grey color for text */
+    padding: 10px -50px; /* Add padding to make the links bigger */
+    margin: 0 15px; /* Add space between links */
+    text-decoration: none; /* Remove underline by default */
+}
+
+    /* On hover, change text color */
+    .nav-link:hover {
+        color: #ff6600; /* Change color to orange when hovered */
+        text-decoration: underline; /* Underline on hover */
+    }
+
+/*----------------------------------------------------------------------------------------*/
+/* Footer Styling */
+
+
+html, body {
+    height: 100%; /* Make the body and html elements take full height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Allow main to take up remaining space */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+
+/* Footer Styling */
+/* Footer Styling */
+
+html, body {
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* Allow main to take up remaining space */
+}
+
+
+/* Ensure the footer stays at the bottom */
+.footer {
+    margin-top: auto;
+}
+
+
+/* Footer Styling */
+/* Ensure body and html cover the entire height */
+html, body {
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styling */
+main {
+    flex-grow: 1; /* Allow main to take up remaining space */
+    color: #000; /* Ensure the color is reset to default for the main content */
+    margin-bottom: 0; /* Remove any unwanted space below main */
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto !important; /* Push footer to the bottom, ensure it takes precedence */
+    width: 100% !important; /* Ensure footer spans full width */
+    background-color: #000 !important; /* Background color for the footer */
+    color: #fff !important; /* Set the text color to white */
+    padding: 0px 0px !important; /* Set the padding to 0px to remove any extra space */
+    box-sizing: border-box !important; /* Ensure padding does not affect overall height */
+}
+
+    /* Ensure there's no margin/padding inside footer parts */
+    footer .footer-part {
+        margin: 0 !important;
+        padding: 10px 0 !important; /* Adjust the space inside each part */
+    }
+
+    /* Additional rules to prevent unwanted space in footer containers */
+    footer .container, footer .row, footer .col-* {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+
+    footer .footer-part:first-child {
+        background-color: black !important;
+        color: white;
+    }
+
+    footer .footer-part:last-child {
+        background-color: grey !important;
+        color: white;
+    }
+
+    /* Ensure there are no unexpected margins on the footer content */
+    footer .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .row {
+        margin: 0;
+        padding: 0;
+    }
+
+/* Footer Part 1: Top Black Footer Styling */
+
+/* Subscribe Button */
+.footer-part:first-child button.btn {
+    background-color: #ffffff; /* Dark Gray Background */
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    margin-left: 5px; /* Add space between input and button */
+    padding: 0 15px; /* Adjust padding for better button size */
+    transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+    .footer-part:first-child button.btn:hover {
+        background-color: #5e5e5c; /* Change background color on hover */
+        color: #ffffff; /* Keep the text white or set your desired hover text color */
+        transform: translateY(-2px); /* Slightly lift the button on hover */
+    }
+
+.footer-part:first-child {
+    background-color: black !important;
+    color: white;
+    padding: 10px 0; /* Add padding for better spacing */
+}
+
+    .footer-part:first-child .d-flex {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-part:first-child h5 {
+        margin-bottom: 0; /* Ensure the text stays aligned */
+        margin-right: 10px; /* Add space between text and input box */
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .footer-part:first-child input.form-control {
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+    }
+
+    .footer-part:first-child a {
+        color: white !important;
+    }
+
+        .footer-part:first-child a:hover {
+            text-decoration: underline;
+        }
+
+
+
+/* Style for Footer Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+}
+
+.icon {
+    width: 30px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add hover effect */
+}
+
+    .icon:hover {
+        transform: scale(1.1); /* Slightly enlarge icon on hover */
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5)); /* Add subtle shadow */
+    }
+
+

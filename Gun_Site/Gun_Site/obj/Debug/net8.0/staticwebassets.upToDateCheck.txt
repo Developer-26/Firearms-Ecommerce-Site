@@ -1,0 +1,167 @@
+wwwroot\css\About.css
+wwwroot\css\Admin_Added_Products.css
+wwwroot\css\footer.css
+wwwroot\css\Home.css
+wwwroot\css\logo-styles.css
+wwwroot\css\Products.css
+wwwroot\css\site.css
+wwwroot\css\ViewSpecials.css
+wwwroot\favicon.ico
+wwwroot\images1\specials\157a9b76-6f0d-4843-b844-0334aae4eb3f_Gun2.jpg
+wwwroot\images1\specials\28f86d63-2085-4b7c-9b29-ae7e14f2990c_Gun3.png
+wwwroot\images1\specials\31501c93-7974-4dc5-b963-8f9b1597b5f0_Gun2.jpg
+wwwroot\images1\specials\39e779f5-841c-46c0-9d36-26b3a8cabe8e_Gun2.jpg
+wwwroot\images1\specials\4112ba37-ba41-432e-9728-756e45a98e53_Gun3.png
+wwwroot\images1\specials\41e79e7f-76e9-4b77-8b54-b7d4c34e965c_Gun1.png
+wwwroot\images1\specials\525d793c-b5cc-4090-b663-ef758991f9f1_Gun2.jpg
+wwwroot\images1\specials\6550ed9a-2289-47a3-a613-e3c2b9e96e18_Gun2.jpg
+wwwroot\images1\specials\d41d88df-dda4-4d42-b2f8-9938c1af4cab_512355370_1.jpg
+wwwroot\images1\specials\ecbc0b21-cb60-4c74-96c0-61c467e736c0_10305_1.jpg
+wwwroot\images\1.png
+wwwroot\images\2.jpg
+wwwroot\images\background.png
+wwwroot\images\Background1.jpg
+wwwroot\images\Banner.png
+wwwroot\images\Banner1.jpg
+wwwroot\images\BG1.jpg
+wwwroot\images\bullets.png
+wwwroot\images\chevron (1).png
+wwwroot\images\chevron.png
+wwwroot\images\Circle_Logo.png
+wwwroot\images\ContactInfo.jpg
+wwwroot\images\ddd75ecb-0ee4-47d5-9c1e-5f95dd8dfbf6.jpg
+wwwroot\images\facebook.png
+wwwroot\images\facebookicon.png
+wwwroot\images\firearm.png
+wwwroot\images\Gun_1.jpg
+wwwroot\images\Gun_2.jpg
+wwwroot\images\Gun_3.jpg
+wwwroot\images\Gun_4.jpg
+wwwroot\images\Gun_5.jpg
+wwwroot\images\Gun_6.jpg
+wwwroot\images\Gun_7.jpg
+wwwroot\images\Gun_8.jpg
+wwwroot\images\hand.png
+wwwroot\images\image1.jpg
+wwwroot\images\instagram.png
+wwwroot\images\instragramicon.png
+wwwroot\images\like.png
+wwwroot\images\Logo_1.png
+wwwroot\images\OIP.jpg
+wwwroot\images\OIP1.jpg
+wwwroot\images\OIP3.jpg
+wwwroot\images\OIP4.jpg
+wwwroot\images\products\03f9e084-7f09-4a88-9e59-afb6eaf41cc8_SJVV000777_1.jpg
+wwwroot\images\products\076fa1db-cb5a-4b03-831d-e4fe551b50c1_STV916556B_1.jpg
+wwwroot\images\products\19886668-41a7-463a-84f0-de83465e7def_PISTOL 9MM PARA SPRINGFIELD XD-M ELITE WITH 3 MAGS.jpg
+wwwroot\images\products\19b35683-6234-4bb8-9068-0eab214dcc0d_PISTOL 9MM PARA CZ TACTICAL SPORT 2 RACING GREEN.jpg
+wwwroot\images\products\1fb78077-9a93-4cf9-ac9f-7c256ebb8013_PISTOL 9MM PARA CZ TACTICAL SPORT 2 RACING GREEN.jpg
+wwwroot\images\products\1fcb7998-920d-4358-b6fc-e0f1eb112319_RIFLE 416 RIGBY RIGBY BIG GAME DSB GRADE 9.jpg
+wwwroot\images\products\232b877c-d482-4b2f-9ace-d215d236985f_STV916556B_1.jpg
+wwwroot\images\products\24cc21d5-8195-44dd-94e4-a833f4529af4_SHOTGUN SEMI 12GA MOSSBERG 940 JM PRO SEMI-AUTO CAMO 24.jpg
+wwwroot\images\products\2861db39-b3a8-442c-95b6-2fcfb454031f_PISTOL 9MM PARA CZ TACTICAL SPORT 2 RACING GREEN.jpg
+wwwroot\images\products\2aaa259c-b1f0-415c-b912-2135baf6e0a3_PISTOL 9MM PARA SIG P320 M18 SIGLIGHT 3.9 IN COYOTE MANUAL SAFETY.jpg
+wwwroot\images\products\2abb9775-7133-4f3a-84c9-1b6c2816e0c9_SHOTGUN SEMI 12GA BERETTA 1301 TACTICAL 18.5.jpg
+wwwroot\images\products\2e74d98a-19cf-47d7-9f4a-9dacaaea815c_PISTOL 9MM PARA SPRINGFIELD XD-M ELITE WITH 3 MAGS.jpg
+wwwroot\images\products\321ae8fa-3a20-4855-9260-0cbc302f15f4_PISTOL 9MM PARA SPRINGFIELD XD-M ELITE WITH 3 MAGS.jpg
+wwwroot\images\products\37e21cf0-4235-41b4-a7a4-3bb260c3da4a_10213_1.jpg
+wwwroot\images\products\39378222-77fb-443b-b343-2befd3db3ed1_SJVV000777_1.jpg
+wwwroot\images\products\4318b202-90dc-4de3-bd68-79c375f1c69d_PISTOL 9MM PARA SPRINGFIELD XD-M ELITE WITH 3 MAGS.jpg
+wwwroot\images\products\45c5d1a1-59c7-4bc1-bfe1-7d76dc415646_PISTOL 9MM PARA CZ TACTICAL SPORT 2 DEEP BRONZE.jpg
+wwwroot\images\products\4ecbcdcf-9533-4c90-bf5a-340cfc0a1d9b_SJVV000777_1.jpg
+wwwroot\images\products\528376b6-b6a9-41ef-a5f0-42a6d87cf182_HL916556B_1.jpg
+wwwroot\images\products\5310f423-d04a-4a79-8489-09e74a819e21_A1851431_1.jpg
+wwwroot\images\products\54dabd1a-4aff-4f3b-9049-12fbf8eb98c6_RIFLE SEMI 9MM PARA SIG MPX BRACE 30RD BLACK 4.5.jpg
+wwwroot\images\products\5a89e533-e0db-4f6d-9938-48869e2ecc76_RIFLE SEMI 9MM PARA SPRINGFIELD SAINT VICTOR RIFLE 16 32 ROUND.jpg
+wwwroot\images\products\5ea293b8-5abd-4204-b1c1-535135b305dc_PISTOL 9MM PARA GLOCK G43X RAIL BLACK.jpg
+wwwroot\images\products\61ba2c86-5a81-4b51-ab24-e94384147ae0_RIFLE SEMI 223 REM DANIEL DEFENSE DDM4 V7 MILL SPEC BROWN 16.jpg
+wwwroot\images\products\6689531d-a02c-4c9a-aa9f-3999310dcb30_10305_1.jpg
+wwwroot\images\products\6f0d2f73-bded-4c82-99e0-fc6336748257_PISTOL 9MM PARA SPRINGFIELD PRODIGY 1911 DS 5 INCH W DRAGONFLY.jpg
+wwwroot\images\products\7811dfa0-3fdf-471c-b99b-cb044e78e4ae_RIFLE 375 H&H RIGBY BIG GAME DSB GRADE 8.jpg
+wwwroot\images\products\7d5c1bcf-7055-42d6-b0ef-3257b4b83071_212823384_1.jpg
+wwwroot\images\products\83583e0c-930f-43c2-a7f9-e829e2d16ac6_bokarica_francolin_s-16_silver_select_12-76_71cm2 (1).jpg
+wwwroot\images\products\86857442-1332-4f17-bf60-c28ecc278fb8_RIFLE SEMI 223 REM DANIEL DEFENSE DDM4 V7 MILL SPEC BROWN 16.jpg
+wwwroot\images\products\8c98d6e9-303b-42ea-ab2e-bf9e396d00bc_PISTOL 9MM PARA SIG P320 M18 SIGLIGHT 3.9 IN COYOTE MANUAL SAFETY.jpg
+wwwroot\images\products\92b651f1-bd66-446e-93c4-93463cd873e3_BRX13006SYNT_1.jpg
+wwwroot\images\products\95ecab05-8c43-4157-8086-b215e620258b_PISTOL 9MM PARA SIG P320 M18 SIGLIGHT 3.9 IN COYOTE MANUAL SAFETY.jpg
+wwwroot\images\products\96f10dc0-aa05-46b9-9176-0e9886679a54_PISTOL 9MM PARA CZ 75 SP01 SHADOW 2 OPTICS READY.jpg
+wwwroot\images\products\a52e6cf1-e231-4392-9faa-8ec98d7937d7_MOS12GAW_1.jpg
+wwwroot\images\products\affdb3e5-97ba-4e82-95e3-511f8e7790a5_RIFLE SEMI 223 REM DANIEL DEFENSE DDM4 V7 MILL SPEC BROWN 16.jpg
+wwwroot\images\products\b23de7f7-d3d7-4266-874f-c595da1ce1a8_SHOTGUN SEMI 12GA WINCHESTER SX4 RANIERO TESTA.jpg
+wwwroot\images\products\cbfef86e-4fd1-4782-9520-8e64a7450026_RIFLE SEMI 308 WIN S&W M&P10 SPORT OR 16 INCH.jpg
+wwwroot\images\products\d62e749b-3558-4271-a640-4ab53c84d3c7_SHOTGUN SEMI 12GA BERETTA 1301 TACTICAL 18.5.jpg
+wwwroot\images\products\df9a32f9-27fb-46e1-9ca3-2d5c2fbab4d3_PISTOL 9MM PARA CZ 75 SP01 SHADOW 2 OPTICS READY.jpg
+wwwroot\images\products\e5c7c811-fbe0-4f77-b99f-397875d1c27b_RIFLE 404 JEFFERY RIGBY BIG GAME DSB GRADE 8.jpeg
+wwwroot\images\products\e6a2fa7e-9ad3-4ac1-bc63-8688f092b8e0_921729_1.jpg
+wwwroot\images\products\e87ebd56-e912-4ef7-8c45-27ee71bc0db9_bokarica_francolin_s-16_silver_select_12-76_71cm2 (1).jpg
+wwwroot\images\products\e94f023c-ea6e-43f7-9516-fdae8919e069_PISTOL 9MM PARA CZ TACTICAL SPORT 2 RACING GREEN.jpg
+wwwroot\images\products\ec0fec83-acab-4a5a-b077-32e73906c8be_MOS12GAW_1.jpg
+wwwroot\images\products\f56d9f22-b737-4723-8617-e5a07de379e8_RIFLE 375 H&H RIGBY DSB GRADE 5.jpg
+wwwroot\images\products\f8abc9c6-9300-4218-9b25-21294acb6faa_56077_1.jpg
+wwwroot\images\products\f92bc3d3-a613-48c9-98f3-3ec26666c01c_PISTOL 9MM PARA CZ TACTICAL SPORT 2 RACING GREEN.jpg
+wwwroot\images\products\fb94486e-6b60-4f25-a415-ce553a706b80_PISTOL 9MM PARA SIG P320 M18 SIGLIGHT 3.9 IN COYOTE MANUAL SAFETY.jpg
+wwwroot\images\R.jpg
+wwwroot\images\R1.jpg
+wwwroot\images\R3.jpg
+wwwroot\images\Spartan.jpg
+wwwroot\images\twitter.png
+wwwroot\images\twittericon.png
+wwwroot\JavaScript\slider.js
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt

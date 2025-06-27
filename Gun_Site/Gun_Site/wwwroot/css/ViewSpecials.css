@@ -1,0 +1,91 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*Gun Sales Section*/
+
+/* Ensure no overlap with gallery items */
+.shopping-gallery {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+
+/* Shopping Gallery */
+.shopping-gallery {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+    justify-content: space-between; /* Distribute space between items */
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Gallery Items */
+.gallery-item {
+    flex: 0 0 31.33%; /* Three items per row (with space between) */
+    box-sizing: border-box; /* Includes padding in the width */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border around the item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    background-color: #fff; /* White background for the box */
+    margin: 10px; /* Space between boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+    .gallery-item:hover {
+        transform: translateY(-10px); /* Lift the item slightly on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    }
+
+    .gallery-item img {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 200px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+.item-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.item-price {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Heading for Specials Section */
+.Heading-Specials {
+    padding: 20px 0; /* Adds vertical spacing */
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Increases the font size for better visibility */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Sets a dark gray color for the text */
+    background-color: #f8f9fa; /* Optional: Light background for better emphasis */
+    margin: 20px auto; /* Adds margin to separate from surrounding content */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
+}
+
+button:disabled {
+    opacity: 0.5; /* Makes disabled buttons look faded */
+    cursor: not-allowed; /* Shows not-allowed cursor when hovering over disabled buttons */
+}
+
+/* Heading for Specials Section */
+.Heading-Specials1 {
+    padding: 20px 0; /* Adds vertical spacing */
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Increases the font size for better visibility */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Sets a dark gray color for the text */
+    background-color: #f8f9fa; /* Optional: Light background for better emphasis */
+    margin: 20px auto; /* Adds margin to separate from surrounding content */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
